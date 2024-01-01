@@ -9,15 +9,17 @@ export const metadate = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body>
-        <div className="main">
-          <div className="gradient"></div>
-        </div>
-        <main className="app">
-          <Nav />
-          {children}
-        </main>
-      </body>
+      <Provider>
+        <body>
+          <div className="main">
+            <div className="gradient"></div>
+          </div>
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </body>
+      </Provider>
     </html>
   );
 };
